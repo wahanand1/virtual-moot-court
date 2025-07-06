@@ -13,7 +13,7 @@ load_dotenv()
 # Set your OpenAI API key
 
 # Initialize the OpenAI client
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 model = "gpt-4.1-nano-2025-04-14"  # Use the latest model available
 
 # Initialize embeddings
